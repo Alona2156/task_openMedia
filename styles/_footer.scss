@@ -1,0 +1,74 @@
+@import "./_mixin-position-absolute.scss";
+@import './_font-family-font-size.scss';
+@import './_media-query.scss';
+
+footer {
+  width: 100%;
+  height: 272px;
+  position: relative;
+  #violet_1 {
+    @include absolute(30px, 0px);
+  }
+  #violet_2 {
+    @include absolute(20px, 497px);
+  }
+  #violet_3 {
+    @include absolute(164px, 0px);
+    width: 980px;
+  }
+  #footer_text {
+    position: absolute;
+    top: 98px;
+    z-index: 400;
+    color: white;
+    @include font(Arial, 14pt);
+    display: flex;
+    flex-direction: column;
+    p {
+      margin-top: 10px;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@include media(0px, 800px){
+  #footer_text {
+    width: 70%;
+    left: 20%;
+  }
+}
+
+@include media(801px, 1920px){
+  #footer_text {
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@include media(0px, 450px){
+  #icons {
+    width: 40px;
+    height: 100px;
+    @include absolute(108px, 10%);
+    flex-direction: column;
+    a:nth-of-type(n+2) > img {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include media(451px, 1920px){
+  #icons {
+    width: 50%;
+    @include absolute(245px, 50%);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    a:nth-of-type(-n+2) > img {
+      margin-right: 20px;
+    }
+  }
+}

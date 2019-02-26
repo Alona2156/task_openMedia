@@ -1,0 +1,75 @@
+@import "./_mixin-position-absolute.scss";
+@import "./_fonts.scss";
+@import './_font-family-font-size.scss';
+@import "./_media-query.scss";
+
+header {
+  width: 100%;
+  height: 534px;
+  position: relative;
+  #main_bg {
+    width: 100%;
+    height: 100%;
+  }
+  #violet {
+    @include absolute(25px, -104px);
+  }
+  #green{
+    @include absolute(5px, 67%);
+  }
+  #circle {
+    @include absolute(386px, 22%);
+  }
+  #stroller{
+    position: absolute;
+    top: 161px;
+    right: 177px;
+  }
+  #woman{
+    position: absolute;
+    top: -72px;
+    right: -113px;
+  }
+  #text{
+    width: 74%;
+    @include absolute(45px, 6%);
+    text-align: center;
+    #left {
+      margin-left: -20%;
+    }
+  }
+}
+
+@include media(0px, 750px){
+  #bg_title{
+    width: calc(100% - 20px);
+    @include absolute(56px, 10px);
+  }
+}
+
+
+@include media(751px, 1920px){
+  #bg_title{
+    width: 74%;
+    @include absolute(56px, 13%);
+  }
+}
+
+
+@include media(0px, 650px){
+  #text{
+    @include font(Chocolatecyr-lat, 28pt);
+    * {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include media(651px, 1920px){
+  #text{
+    @include font(Chocolatecyr-lat, 44pt);
+    * {
+      margin-top: 40px;
+    }
+  }
+}

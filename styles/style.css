@@ -1,0 +1,405 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+#container {
+  max-width: 980px;
+  width: 100%;
+  overflow: hidden; }
+
+@font-face {
+  font-family: Chocolatecyr-lat;
+  src: url("../BBP test/fonts/Chocolate cyr-lat.otf"); }
+
+@font-face {
+  font-family: 'JakobTT';
+  src: url("../BBP test/fonts/4333.woff");
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  width: 100%;
+  height: 534px;
+  position: relative; }
+  header #main_bg {
+    width: 100%;
+    height: 100%; }
+  header #violet {
+    position: absolute;
+    top: 25px;
+    left: -104px; }
+  header #green {
+    position: absolute;
+    top: 5px;
+    left: 67%; }
+  header #circle {
+    position: absolute;
+    top: 386px;
+    left: 22%; }
+  header #stroller {
+    position: absolute;
+    top: 161px;
+    right: 177px; }
+  header #woman {
+    position: absolute;
+    top: -72px;
+    right: -113px; }
+  header #text {
+    width: 74%;
+    position: absolute;
+    top: 45px;
+    left: 6%;
+    text-align: center; }
+    header #text #left {
+      margin-left: -20%; }
+
+@media only screen and (min-width: 0px) and (max-width: 750px) {
+  #bg_title {
+    width: calc(100% - 20px);
+    position: absolute;
+    top: 56px;
+    left: 10px; } }
+
+@media only screen and (min-width: 751px) and (max-width: 1920px) {
+  #bg_title {
+    width: 74%;
+    position: absolute;
+    top: 56px;
+    left: 13%; } }
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+  #text {
+    font-family: Chocolatecyr-lat;
+    font-size: 28pt; }
+    #text * {
+      margin-top: 30px; } }
+
+@media only screen and (min-width: 651px) and (max-width: 1920px) {
+  #text {
+    font-family: Chocolatecyr-lat;
+    font-size: 44pt; }
+    #text * {
+      margin-top: 40px; } }
+
+@font-face {
+  font-family: Chocolatecyr-lat;
+  src: url("../BBP test/fonts/Chocolate cyr-lat.otf"); }
+
+@font-face {
+  font-family: 'JakobTT';
+  src: url("../BBP test/fonts/4333.woff");
+  font-weight: normal;
+  font-style: normal; }
+
+main {
+  width: 100%; }
+  main section {
+    position: relative;
+    width: 100%;
+    height: 496px; }
+  main #section_logos {
+    height: 193px; }
+  main #pink_dot_1 {
+    position: absolute;
+    top: 81px;
+    left: 218px;
+    z-index: -50; }
+  main #green_dot {
+    position: absolute;
+    top: 25px;
+    left: 370px;
+    z-index: -50; }
+  main #yellow_dot {
+    position: absolute;
+    top: 0px;
+    left: 644px;
+    z-index: -50; }
+  main #pink_dot_2 {
+    position: absolute;
+    top: 71px;
+    left: 850px;
+    z-index: -50; }
+  main #green_1 {
+    position: absolute;
+    top: 5px;
+    left: 2%;
+    z-index: -50; }
+  main #pink {
+    position: absolute;
+    top: 157px;
+    right: -3%;
+    z-index: -50; }
+  main #circle {
+    z-index: 20; }
+  main #rect {
+    width: 70%;
+    height: 86px;
+    z-index: 10; }
+  main #number {
+    z-index: 30; }
+  main #green_2 {
+    position: absolute;
+    top: 352px;
+    left: 687px;
+    z-index: 30; }
+  main #main_text {
+    z-index: 80; }
+    main #main_text #text_header {
+      font-family: JakobTT;
+      font-size: 28pt;
+      text-align: center;
+      color: #8dafdd; }
+    main #main_text .text {
+      font-family: Open Sans;
+      font-size: 16pt;
+      margin-top: 25px;
+      line-height: 1.2; }
+  main #textPinkLine {
+    font-family: Open Sans;
+    font-size: 16pt;
+    width: 60%;
+    z-index: 40;
+    color: black; }
+  main #yellow_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 30; }
+  main #yellow_2 {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    z-index: 30; }
+  main #yellow_3 {
+    position: absolute;
+    top: 276px;
+    left: 0px;
+    z-index: 30; }
+  main #images_block {
+    width: 74%;
+    height: 250px;
+    position: absolute;
+    top: 105px;
+    left: 13%;
+    z-index: 40;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    main #images_block .images {
+      width: 166px;
+      height: 250px; }
+    main #images_block #lady_stroller_1 {
+      background-image: url("../BBP test/elements/main/section_two/Layer 1@1X.png"), url("../BBP test/elements/main/section_two/Rectangle 5 copy 5@1X.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    main #images_block #lady_stroller_2 {
+      background-image: url("../BBP test/elements/main/section_two/Layer 3@1X.png"), url("../BBP test/elements/main/section_two/Ellipse 3@1X.png"), url("../BBP test/elements/main/section_two/Rectangle 5 copy 5@1X.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    main #images_block #lady_stroller_3 {
+      background-image: url("../BBP test/elements/main/section_two/Layer 2@1X.png"), url("../BBP test/elements/main/section_two/Rectangle 7 copy 9@1X.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    main #images_block #lady_stroller_4 {
+      background-image: url("../BBP test/elements/main/section_two/Layer 4@1X.png"), url("../BBP test/elements/main/section_two/Ellipse 3 copy@1X.png"), url("../BBP test/elements/main/section_two/Rectangle 7 copy 9@1X.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    main #images_block #violet_1 {
+      position: absolute;
+      top: 106px;
+      left: 11%; }
+    main #images_block #violet_1_text {
+      position: absolute;
+      top: 26px;
+      left: 12px;
+      font-family: JakobTT;
+      font-size: 12pt;
+      color: white; }
+    main #images_block #violet_2_text {
+      position: absolute;
+      top: 26px;
+      left: 44px;
+      font-family: JakobTT;
+      font-size: 12pt;
+      color: white; }
+  main #logos_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center; }
+    main #logos_block p#partners {
+      width: 100%;
+      margin-bottom: 42px;
+      font-family: JakobTT;
+      font-size: 30pt;
+      color: #8dafdd; }
+    main #logos_block img {
+      margin-top: 20px; }
+  main #green_3 {
+    position: absolute;
+    top: 66px;
+    left: -50px;
+    z-index: -50; }
+  main #pink_2 {
+    position: absolute;
+    top: 2px;
+    right: -2%;
+    z-index: -50; }
+  main #pink_dot_3 {
+    position: absolute;
+    top: 80px;
+    left: 192px; }
+  main #pink_dot_4 {
+    position: absolute;
+    top: 210px;
+    left: 586px; }
+  main #pink_dot_5 {
+    position: absolute;
+    top: 18px;
+    left: 670px; }
+
+@media only screen and (min-width: 0px) and (max-width: 780px) {
+  #logos_block {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 5px; }
+  #main_text {
+    width: calc(100% - 20px);
+    position: absolute;
+    top: 50px;
+    left: 10px; } }
+
+@media only screen and (min-width: 781px) and (max-width: 1920px) {
+  #logos_block {
+    width: 74%;
+    position: absolute;
+    top: 0px;
+    left: 13%; }
+  #main_text {
+    width: 73%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%); } }
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  #rect {
+    position: absolute;
+    top: 393px;
+    left: 16%; }
+  #circle {
+    position: absolute;
+    top: 384px;
+    left: 13%; }
+  #number {
+    position: absolute;
+    top: 409px;
+    left: 17%; }
+  #textPinkLine {
+    position: absolute;
+    top: 414px;
+    left: calc(25% + 20px); } }
+
+@media only screen and (min-width: 501px) and (max-width: 1920px) {
+  #rect {
+    position: absolute;
+    top: 353px;
+    left: 16%; }
+  #circle {
+    position: absolute;
+    top: 344px;
+    left: 13%; }
+  #number {
+    position: absolute;
+    top: 369px;
+    left: 17%; }
+  #textPinkLine {
+    position: absolute;
+    top: 374px;
+    left: calc(25% + 20px); } }
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  #images_block .images {
+    margin-bottom: 20px; } }
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+  #violet_2 {
+    position: absolute;
+    top: 376px;
+    left: 11%; } }
+
+@media only screen and (min-width: 651px) and (max-width: 1920px) {
+  #violet_2 {
+    position: absolute;
+    top: 110px;
+    left: 65%; } }
+
+footer {
+  width: 100%;
+  height: 272px;
+  position: relative; }
+  footer #violet_1 {
+    position: absolute;
+    top: 30px;
+    left: 0px; }
+  footer #violet_2 {
+    position: absolute;
+    top: 20px;
+    left: 497px; }
+  footer #violet_3 {
+    position: absolute;
+    top: 164px;
+    left: 0px;
+    width: 980px; }
+  footer #footer_text {
+    position: absolute;
+    top: 98px;
+    z-index: 400;
+    color: white;
+    font-family: Arial;
+    font-size: 14pt;
+    display: flex;
+    flex-direction: column; }
+    footer #footer_text p {
+      margin-top: 10px; }
+      footer #footer_text p img {
+        margin-right: 15px; }
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  #footer_text {
+    width: 70%;
+    left: 20%; } }
+
+@media only screen and (min-width: 801px) and (max-width: 1920px) {
+  #footer_text {
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%); } }
+
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+  #icons {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    top: 108px;
+    left: 10%;
+    flex-direction: column; }
+    #icons a:nth-of-type(n+2) > img {
+      margin-top: 10px; } }
+
+@media only screen and (min-width: 451px) and (max-width: 1920px) {
+  #icons {
+    width: 50%;
+    position: absolute;
+    top: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; }
+    #icons a:nth-of-type(-n+2) > img {
+      margin-right: 20px; } }
+
+body {
+  display: flex;
+  justify-content: center; }
